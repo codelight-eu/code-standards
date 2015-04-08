@@ -1,1 +1,1 @@
-<h1>A CSS style guide</h1>
+#LESS/CSS Coding Guidelines
