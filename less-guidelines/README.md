@@ -1,1 +1,1 @@
-LESS Coding Guidelines
+A CSS style guide
