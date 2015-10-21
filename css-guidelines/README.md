@@ -13,14 +13,18 @@ Many of the ideas, concepts and conventions described in this document are deriv
 It is highly recommended to read these articles before commencing.
 
 ##Syntax and Formatting
+
 ###Basics
 - two (2) space indents, no tabs;
 - 80 character wide columns;
 - multi-line CSS;
 - meaningful use of whitespace;
-- each BEM block should be in a separate file and the file name should match the block's class name
 
 ###Ruleset formatting
+
+###Separate files
+Each BEM block should be in a separate file and the file name should match the block's class name. All the other
+styles should reside in separate files as well and those files should be named accordingly. 
 
 ##Nesting
 Avoid nesting CSS selectors whenever possible
