@@ -12,5 +12,11 @@ Many of the ideas, concepts and conventions described in this document are deriv
 
 It is highly recommended to read these articles before commencing.
 
+##Syntax and Formatting
+- two (2) space indents, no tabs;
+- 80 character wide columns;
+- multi-line CSS;
+- meaningful use of whitespace.
+
 ##Nesting
 Avoid nesting CSS selectors whenever possible
