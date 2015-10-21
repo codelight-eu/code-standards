@@ -24,28 +24,28 @@ It is highly recommended to read these articles before commencing.
 
 ###Separate files
 Each BEM block should be in a separate file and the file name should match the block's class name. All the other
-styles should reside in separate files as well and those files should be named accordingly. For example:
+styles should reside in separate files as well and those files should be named accordingly. If done correctly, the main SASS or LESS file, where all the other componets are included, will serve as a table of contents. For example:
     
-    @import "common/_variables";
+    @import "common/_variables";                         // Custom variables
 
     // Automatically injected Bower dependencies via wiredep (never manually edit this block)
     // bower:scss
     @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
     // endbower
 
-    @import "common/_global";
-    @import "components/_buttons";
-    @import "components/_comments";
-    @import "components/_forms";
-    @import "components/_grid";
-    @import "components/_wp-classes";
-    @import "components/_square";
-    @import "components/_logos";
-    @import "components/_singlePost";
-    @import "components/_contentCircle";
-    @import "components/_basicPage";
-    @import "components/_menus";
-    @import "components/_prompt";
+    @import "common/_global";                             // Site wide styles
+    @import "components/_buttons";                        // Buttons
+    @import "components/_comments";                       // WP comments
+    @import "components/_forms";                          // Basic forms
+    @import "components/_grid";                           // Grid overrides and custom grids 
+    @import "components/_wp-classes";                     // WP specific styles
+    @import "components/_square";                         // .square styles
+    @import "components/_logos";                          // Brand logos
+    @import "components/_singlePost";                     // .singlePost styles
+    @import "components/_contentCircle";                  // .conentCircle styles
+    @import "components/_basicPage";                      // .basicPage styles
+    @import "components/_menus";                          // Main and footer menu styles
+    @import "components/_prompt";                         // Prompt modal styles
     
 
 ##Nesting
