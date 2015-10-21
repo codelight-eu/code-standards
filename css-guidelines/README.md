@@ -54,6 +54,9 @@ CSS should be written on multiple lines. Exceptions to this rule are rulesets th
     .icon--person   { background-position: -16px   0  ; }
     .icon--files    { background-position:   0   -16px; }
     .icon--settings { background-position: -16px -16px; }
+    
+Avoid nesting CSS selectors whenever possible. 
+Avoid indenting whole rulesets.
 
 ###Separate files
 Each BEM block should be in a separate file and the file name should match the block's class name. All the other
@@ -83,5 +86,6 @@ styles should reside in separate files as well and those files should be named a
 It makes specific stylesheets easy to find and modify. Since all the BEM blocks are in separate files, it's also easy
 to safely remove some of them if they are no longer needed.
 
-##Nesting
-Avoid nesting CSS selectors whenever possible
+
+
+
