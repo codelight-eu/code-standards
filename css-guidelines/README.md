@@ -31,6 +31,7 @@ It is highly recommended to read these articles before commencing.
 - our closing brace (}) on its own new line;
 - each declaration indented by two (2) spaces;
 - a trailing semi-colon (;) on our last declaration.
+
 For example:
     .foo, .foo--bar,
     .baz {
