@@ -1,4 +1,4 @@
-CSS Coding Guidelines
+#CSS Coding Guidelines
 
 This document provides a basic set of rules for writing easily maintainable, readable and scalable CSS.
 Codelight's naming conventions are based on BEM methodology.
@@ -10,5 +10,5 @@ Many of the ideas, concepts and conventions described in this document are based
 - http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/
 - http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
 
-Nesting
+##Nesting
 Avoid nesting CSS selectors whenever possible
