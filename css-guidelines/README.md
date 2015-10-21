@@ -17,6 +17,7 @@ It is highly recommended to read these articles before commencing.
 - 80 character wide columns;
 - multi-line CSS;
 - meaningful use of whitespace.
+- divide css by blocks into separate files
 
 ##Nesting
 Avoid nesting CSS selectors whenever possible
