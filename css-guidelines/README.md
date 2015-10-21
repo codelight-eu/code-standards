@@ -19,6 +19,7 @@ It is highly recommended to read these articles before commencing.
 - multi-line CSS;
 - meaningful use of whitespace;
 - each BEM block should be in a separate file and the file name should match the block's class name
+
 ###Ruleset formatting
 
 ##Nesting
