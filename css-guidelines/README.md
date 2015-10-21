@@ -33,6 +33,7 @@ It is highly recommended to read these articles before commencing.
 - a trailing semi-colon (;) on our last declaration.
 
 For example:
+
     .foo, .foo--bar,
     .baz {
       display: block;
