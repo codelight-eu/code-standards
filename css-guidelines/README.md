@@ -41,6 +41,20 @@ For example:
       color: red;
     }
 
+CSS should be written on multiple lines. Exceptions to this rule are rulesets that only carry one declaration each, for example:
+
+    .icon {
+      display: inline-block;
+      width:  16px;
+      height: 16px;
+      background-image: url(/img/sprite.svg);
+    }
+
+    .icon--home     { background-position:   0     0  ; }
+    .icon--person   { background-position: -16px   0  ; }
+    .icon--files    { background-position:   0   -16px; }
+    .icon--settings { background-position: -16px -16px; }
+
 ###Separate files
 Each BEM block should be in a separate file and the file name should match the block's class name. All the other
 styles should reside in separate files as well and those files should be named accordingly. If done correctly, the main SASS or LESS file, where all the other componets are included, will serve as a table of contents. For example:
