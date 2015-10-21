@@ -9,6 +9,6 @@ Many of the ideas, concepts and conventions described in this document are deriv
 - http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/
 - http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/
 - http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
-
+It is highly recommended to read these articles before commencing.
 ##Nesting
 Avoid nesting CSS selectors whenever possible
