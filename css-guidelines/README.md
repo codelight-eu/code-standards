@@ -21,6 +21,23 @@ It is highly recommended to read these articles before commencing.
 - meaningful use of whitespace;
 
 ###Ruleset formatting
+- related selectors on the same line; unrelated selectors on new lines;
+- a space before our opening brace ({);
+- properties and values on the same line;
+- a space after our property–value delimiting colon (:);
+- each declaration on its own new line;
+- the opening brace ({) on the same line as our last selector;
+- our first declaration on a new line after our opening brace ({);
+- our closing brace (}) on its own new line;
+- each declaration indented by two (2) spaces;
+- a trailing semi-colon (;) on our last declaration.
+For example:
+    .foo, .foo--bar,
+    .baz {
+      display: block;
+      background-color: green;
+      color: red;
+    }
 
 ###Separate files
 Each BEM block should be in a separate file and the file name should match the block's class name. All the other
