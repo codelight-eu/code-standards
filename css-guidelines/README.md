@@ -24,7 +24,10 @@ It is highly recommended to read these articles before commencing.
 
 ###Separate files
 Each BEM block should be in a separate file and the file name should match the block's class name. All the other
-styles should reside in separate files as well and those files should be named accordingly. 
+styles should reside in separate files as well and those files should be named accordingly. For example:
+    
+    sfaafasf
+    
 
 ##Nesting
 Avoid nesting CSS selectors whenever possible
