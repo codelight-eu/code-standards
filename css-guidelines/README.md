@@ -55,10 +55,12 @@ CSS should be written on multiple lines. Exceptions to this rule are rulesets th
     .icon--files    { background-position:   0   -16px; }
     .icon--settings { background-position: -16px -16px; }
     
+#### Nesting
 Avoid nesting CSS selectors whenever possible.
 
 Avoid indenting whole rulesets.
 
+#### Whitespace
 - Add one (1) empty line between closely related rulesets.
 - Add two (2) empty lines between loosely related rulesets.
 - Add five (5) empty lines between entirely new sections.
