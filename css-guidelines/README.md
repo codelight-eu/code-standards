@@ -26,7 +26,26 @@ It is highly recommended to read these articles before commencing.
 Each BEM block should be in a separate file and the file name should match the block's class name. All the other
 styles should reside in separate files as well and those files should be named accordingly. For example:
     
-    sfaafasf
+    @import "common/_variables";
+
+    // Automatically injected Bower dependencies via wiredep (never manually edit this block)
+    // bower:scss
+    @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+    // endbower
+
+    @import "common/_global";
+    @import "components/_buttons";
+    @import "components/_comments";
+    @import "components/_forms";
+    @import "components/_grid";
+    @import "components/_wp-classes";
+    @import "components/_square";
+    @import "components/_logos";
+    @import "components/_singlePost";
+    @import "components/_contentCircle";
+    @import "components/_basicPage";
+    @import "components/_menus";
+    @import "components/_prompt";
     
 
 ##Nesting
