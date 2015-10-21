@@ -96,4 +96,5 @@ to safely remove some of them if they are no longer needed.
 ### HTML
 Follow these guidelines, except the selector grouping: http://cssguidelin.es/#html
 
-
+### Commenting
+Follow these guidelines: http://cssguidelin.es/#commenting
