@@ -47,6 +47,8 @@ styles should reside in separate files as well and those files should be named a
     @import "components/_menus";                          // Main and footer menu styles
     @import "components/_prompt";                         // Prompt modal styles
     
+It makes specific stylesheets easy to find and modify. Since all the BEM blocks are in separate files, it's also easy
+to safely remove some them if for some reason they are no longer needed.
 
 ##Nesting
 Avoid nesting CSS selectors whenever possible
