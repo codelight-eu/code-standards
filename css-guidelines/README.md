@@ -98,3 +98,5 @@ Follow these guidelines, except the selector grouping: http://cssguidelin.es/#ht
 
 ### Commenting
 Follow these guidelines: http://cssguidelin.es/#commenting
+
+### Naming Conventions
