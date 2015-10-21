@@ -93,6 +93,7 @@ styles should reside in separate files as well and those files should be named a
 It makes specific stylesheets easy to find and modify. Since all the BEM blocks are in separate files, it's also easy
 to safely remove some of them if they are no longer needed.
 
-
+### HTML
+Follow these guidelines, except the selector grouping: http://cssguidelin.es/#html
 
 
