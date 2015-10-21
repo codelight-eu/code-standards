@@ -107,6 +107,9 @@ read these
 - http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
 
 Explain what BEM is and how and why it works.
+
 Explain BEM naming concepts
+
 Examples of BEM and examples of what not to do
+
 Codelight's BEM syntax
