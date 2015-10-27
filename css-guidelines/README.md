@@ -14,6 +14,7 @@ Many of the ideas, concepts and conventions described in this document are deriv
 - https://github.com/rstacruz/rscss
 - https://en.bem.info/method/definitions/#naming-for-independent-css-classes
 - http://bensmithett.github.io/element-queries-preso/
+- http://www.sitepoint.com/beyond-media-queries-time-get-elemental/
 - http://codepen.io/wesruv/post/adventures-in-bem-responsive
 - http://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/
 
