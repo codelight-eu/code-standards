@@ -12,6 +12,7 @@ Many of the ideas, concepts and conventions described in this document are deriv
 - https://css-tricks.com/bem-101/
 - http://www.smashingmagazine.com/2014/07/bem-methodology-for-small-projects/
 - https://github.com/rstacruz/rscss
+- https://en.bem.info/method/definitions/#naming-for-independent-css-classes
 
 It is highly recommended to read these articles before commencing.
 
