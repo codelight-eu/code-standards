@@ -13,7 +13,8 @@ Many of the ideas, concepts and conventions described in this document are deriv
 - http://www.smashingmagazine.com/2014/07/bem-methodology-for-small-projects/
 - https://github.com/rstacruz/rscss
 - https://en.bem.info/method/definitions/#naming-for-independent-css-classes
-- http://bensmithett.github.io/element-queries-preso/#/45
+- http://bensmithett.github.io/element-queries-preso/
+- http://codepen.io/wesruv/post/adventures-in-bem-responsive
 
 It is highly recommended to read these articles before commencing.
 
