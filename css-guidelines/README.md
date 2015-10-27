@@ -17,6 +17,7 @@ Many of the ideas, concepts and conventions described in this document are deriv
 - http://www.sitepoint.com/beyond-media-queries-time-get-elemental/
 - http://codepen.io/wesruv/post/adventures-in-bem-responsive
 - http://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/
+- https://github.com/marcj/css-element-queries
 
 It is highly recommended to read these articles before commencing.
 
