@@ -15,6 +15,7 @@ Many of the ideas, concepts and conventions described in this document are deriv
 - https://en.bem.info/method/definitions/#naming-for-independent-css-classes
 - http://bensmithett.github.io/element-queries-preso/
 - http://codepen.io/wesruv/post/adventures-in-bem-responsive
+- http://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/
 
 It is highly recommended to read these articles before commencing.
 
