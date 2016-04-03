@@ -18,6 +18,7 @@ Many of the ideas, concepts and conventions described in this document are deriv
 - http://codepen.io/wesruv/post/adventures-in-bem-responsive
 - http://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/
 - https://github.com/marcj/css-element-queries
+- http://mrmrs.io/writing/2016/03/24/scalable-css/
 
 It is highly recommended to read these articles before commencing.
 
