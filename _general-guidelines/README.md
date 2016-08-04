@@ -11,4 +11,5 @@ This document provides a basic set of rules for writing easily readable, maintai
 
 
 ### Commenting
+Be generous with comments.
 
