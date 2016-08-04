@@ -11,4 +11,4 @@ This document provides a basic set of rules for writing easily readable, maintai
 
 
 ### Commenting
-Follow these guidelines: http://cssguidelin.es/#commenting
+
