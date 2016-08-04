@@ -8,3 +8,7 @@ This document provides a basic set of rules for writing easily readable, maintai
 ###Basics
 - two (2) space indents, no tabs;
 - meaningful use of whitespace;
+
+
+### Commenting
+Follow these guidelines: http://cssguidelin.es/#commenting
