@@ -28,7 +28,7 @@ This document provides a set of rules for writing Wordpress themes & plugins.
 - Same as above
 - Following the rules defined in Roots\Sage [.editorconfig](https://github.com/roots/sage/blob/master/.editorconfig) is optional. However, in this case you MUST have an .editorconfig file
 
-## Wordpress-specific quirks
+### Wordpress-specific quirks
 - Do not leave spaces between parenthesis and function arguments.
 
 ```php
@@ -47,8 +47,34 @@ add_filter( 'body_class', __NAMESPACE__ . '\\addUserRoleBodyClass' );
 <?php endif; ?>
 ```
 
-- The exception to this is the while statement in The Loop
+- The exception to this is the while statement in The Loop. It's okay to add the_post() call on the same line.
 ```php
 <?php if (have_posts()): ?>
   <?php while (have_posts()): the_post(); ?>
 ```
+
+
+## Development
+
+### Organizing files
+- Typically, you'll want to use OOP and classes to keep things readable and re-usable.
+- Follow [PSR-4](http://www.php-fig.org/psr/psr-4/) autoloading standard
+- todo: namespaces
+- todo: autoloading example
+- However, some very simple projects don't really need classes. In this case, divide your functions into separate files based on their purpose and domain. In most cases, multiple files that have juse one or two functions is better than a single big functions.php file.
+
+- If code 
+- When working on a Sage 8 or other legacy project, use your own judgement regarding whether adding PSR-4 is useful or not. However
+
+### General
+- Keep functionality out of the templates. Views should be stupid.
+- Let functions inject data into templates. Views should be re-usable. todo: how to
+- 
+
+### Copy-pasting code from the Interwebz
+- *Always* add the address where the code came from into a comment
+- Rewrite parts of the code that don't follow this guide. This includes fixing formatting and stupid variable names.
+- There is an exception to this rule: complex algorithms. For example, if you copy-paste a function that does multi-level recursive array diff, you usually shouldn't bother with cleaning it up.
+
+### Very Simple Themes
+When dealing with sites that are really super simple in terms of functionality and have no more than just a couple of re-usable components, it's okay to break most of the best practices detailed in this section. Sometimes you can leave functionality inside the templates, actually put stuff inside lib/extras.php file and not  separate (simple) functionality and views. But even then, put effort into keeping the code tidy and readable. Also keep in mind that there is *always* a chance that a project that started off as a super simple one-pager magically transforms into a not-that-simple two-pager at some point during the process.
