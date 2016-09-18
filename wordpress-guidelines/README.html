@@ -727,20 +727,37 @@ pre {
 <p>This document provides a set of rules for writing Wordpress themes &amp; plugins.</p>
 
 <h2>
+<a id="user-content-editors" class="anchor" href="#editors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Editors</h2>
+
+<h3>
+<a id="user-content-phpstorm-configuration" class="anchor" href="#phpstorm-configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PHPStorm configuration</h3>
+
+<ul>
+<li>todo</li>
+</ul>
+
+<h3>
+<a id="user-content-sublime-text-configuration" class="anchor" href="#sublime-text-configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sublime Text configuration</h3>
+
+<ul>
+<li>todo</li>
+</ul>
+
+<h2>
 <a id="user-content-syntax-and-formatting" class="anchor" href="#syntax-and-formatting" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Syntax and Formatting</h2>
 
 <h3>
 <a id="user-content-general" class="anchor" href="#general" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>General</h3>
 
 <ul>
-<li>An <a href="http://editorconfig.org/">.editorconfig</a> file MUST be present</li>
-<li>Use short PHP echo tags</li>
+<li>An <a href="http://editorconfig.org/">.editorconfig</a> file must be present in each theme and plugin.</li>
+<li>For displaying data, use short PHP echo tags:</li>
 </ul>
 
 <div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-k">=</span> get_field(<span class="pl-s"><span class="pl-pds">'</span>front_title<span class="pl-pds">'</span></span>); </span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
 
 <ul>
-<li>Use spaces between PHP echo tags and code</li>
+<li>There must be one space between PHP echo tags and code:</li>
 </ul>
 
 <div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> <span class="pl-c">// RIGHT </span></span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span>
@@ -754,27 +771,25 @@ pre {
 </h3>
 
 <ul>
-<li>Follow <a href="http://www.php-fig.org/psr/psr-2/">PSR-2</a>
-</li>
-<li>Use <a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP Code Sniffer</a>
-</li>
-<li>Follow the rules defined in Sage's <a href="https://github.com/roots/sage/blob/master/.editorconfig">.editorconfig</a> file</li>
-<li>This means templates must use <strong>2 spaces</strong> for indentation. This is the only deviation from PSR-2.</li>
+<li>Follow <a href="http://www.php-fig.org/psr/psr-2/">PSR-2</a>.</li>
+<li>Use <a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP Code Sniffer</a> to make sure you follow PSR-2 correctly.</li>
+<li>Follow the rules defined in Sage's <a href="https://github.com/roots/sage/blob/master/.editorconfig">.editorconfig</a> file.</li>
+<li>This means templates must use <strong>2 spaces</strong> for indentation. This should be pretty much the only deviation from PSR-2.</li>
 </ul>
 
 <h3>
 <a id="user-content-plugin-development" class="anchor" href="#plugin-development" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plugin development</h3>
 
 <ul>
-<li>Same as above</li>
-<li>Following the rules defined in Roots\Sage <a href="https://github.com/roots/sage/blob/master/.editorconfig">.editorconfig</a> is optional. However, in this case you MUST have an .editorconfig file</li>
+<li>Apply same rules as for theme development.</li>
+<li>Following the rules defined in Roots\Sage <a href="https://github.com/roots/sage/blob/master/.editorconfig">.editorconfig</a> is optional. This means it's okay to use either 2 or 4 spaces in templates. Just don't forget the .editorconfig file.</li>
 </ul>
 
 <h3>
 <a id="user-content-wordpress-specific-quirks" class="anchor" href="#wordpress-specific-quirks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Wordpress-specific quirks</h3>
 
 <ul>
-<li>Do not leave spaces between parenthesis and function arguments.</li>
+<li>Do not leave spaces between parenthesis and function arguments:</li>
 </ul>
 
 <div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> </span>
@@ -793,7 +808,7 @@ pre {
 <span class="pl-pse">&lt;?php</span><span class="pl-s1"> <span class="pl-k">endif</span>; </span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
 
 <ul>
-<li>The exception to this is the while statement in The Loop. It's okay to add the_post() call on the same line.</li>
+<li>The only exception to this is the while statement in The Loop. It's okay to add the_post() call on the same line:</li>
 </ul>
 
 <div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> <span class="pl-k">if</span> (have_posts()): </span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span>
@@ -802,20 +817,83 @@ pre {
 <h2>
 <a id="user-content-development" class="anchor" href="#development" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Development</h2>
 
+<p>The main goal is to keep your code <em>reusable</em> and <em>readable</em>.</p>
+
+<h3>
+<a id="user-content-organizing-files" class="anchor" href="#organizing-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Organizing files</h3>
+
+<ul>
+<li>Use classes.</li>
+<li>Use namespaces. Todo: description</li>
+<li>Follow <a href="http://www.php-fig.org/psr/psr-4/">PSR-4</a> autoloading standard. Todo: autoloading example.</li>
+<li>When working on a Sage 8 or other legacy project, use your own judgement regarding whether adding PSR-4 is useful or not.</li>
+</ul>
+
+<h3>
+<a id="user-content-general-1" class="anchor" href="#general-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>General</h3>
+
+<ul>
+<li>Keep functionality out of the templates. Views should be "dumb".</li>
+<li>Let functions inject data into templates. Views should be re-usable. todo: how to</li>
+<li>Apply <a href="http://deviq.com/don-t-repeat-yourself/">DRY principle</a>.</li>
+<li>Apply <a href="https://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">SOLID principles</a>.</li>
+<li>Use <a href="http://c2.com/cgi/wiki?GoodVariableNames">meaningful variable and function names</a>.</li>
+<li>Use Yoda Conditions:</li>
+</ul>
+
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> <span class="pl-k">if</span> (<span class="pl-c1">true</span> <span class="pl-k">===</span> <span class="pl-smi">$the_force</span>): </span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
+
+<ul>
+<li>Use interpolation instead of concatenation. Always use curly braces when interpolating.</li>
+</ul>
+
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"><span class="pl-k">&lt;</span>?<span class="pl-c1">php</span> <span class="pl-smi">$status</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>{<span class="pl-smi">$new_status</span>}_{<span class="pl-smi">$post</span><span class="pl-k">-&gt;</span><span class="pl-smi">post_type</span>}<span class="pl-pds">"</span></span>;</span></pre></div>
+
+<ul>
+<li>Functions should not output more than one simple line of HTML. For anything longer than that, use a template.</li>
+</ul>
+
 <h3>
 <a id="user-content-copy-pasting-code-from-the-interwebz" class="anchor" href="#copy-pasting-code-from-the-interwebz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Copy-pasting code from the Interwebz</h3>
 
 <ul>
 <li>
-<em>Always</em> add the address where the code came from into a comment</li>
-<li>Rewrite parts of the code that don't follow this guide. This includes formatting and stupid variable names.</li>
-<li>There is an exception to this rule: complex algorithms. If you copy-paste a function that does multi-level recursive array diff, don't bother with cleaning it up.</li>
+<em>Always</em> add the address where the code came from into a comment.</li>
+<li>Rewrite parts of the code that don't follow this guide. This includes fixing formatting and stupid variable names.</li>
+<li>There is an exception to this rule: complex algorithms. For example, if you copy-paste a function that does multi-level recursive array diff, you usually shouldn't bother with cleaning it up.</li>
 </ul>
 
 <h3>
 <a id="user-content-very-simple-themes" class="anchor" href="#very-simple-themes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Very Simple Themes</h3>
 
-<p>When dealing with sites that are really super simple in terms of functionality and have no more than just a couple of re-usable components, it's okay to break most of the best practices detailed in this section. Leave functionality inside the templates, put stuff inside lib/extras.php file, don't separate functionality and views. But even then, put a little bit of effort into keeping the code tidy and readable. Also keep in mind that there is <em>always</em> a chance that a project that started off as a super simple one-pager magically transforms into a not-that-simple two-pager at some point during the process.</p>
+<p>When dealing with sites that are really super simple in terms of functionality and have no more than just a couple of re-usable components, it's okay to break most of the best practices detailed in this section. Sometimes you can leave functionality inside the templates, actually put stuff inside lib/extras.php file and not separate (simple) functionality and views. But even then, put effort into keeping the code tidy and readable.</p>
 
-<p>However, if your code is unr</p>
+<p>Also keep in mind that there is <em>always</em> a chance that a project that started off as a super simple one-pager magically transforms into a not-that-simple two-pager at some point during the process.</p>
+
+<h2>
+<a id="user-content-tools--plugins" class="anchor" href="#tools--plugins" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tools &amp; plugins</h2>
+
+<h3>
+<a id="user-content-working-with-advanced-custom-fields" class="anchor" href="#working-with-advanced-custom-fields" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Working with Advanced Custom Fields</h3>
+
+<ul>
+<li>todo</li>
+</ul>
+
+<h3>
+<a id="user-content-multilingual-sites" class="anchor" href="#multilingual-sites" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Multilingual sites</h3>
+
+<ul>
+<li>todo</li>
+</ul>
+
+<h2>
+<a id="user-content-resources" class="anchor" href="#resources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Resources</h2>
+
+<ul>
+<li>
+<a href="http://www.phptherightway.com/">PHP The Right Way</a> describes some of the general best practices of PHP development.</li>
+<li>
+<a href="https://carlalexander.ca/">Carl Alexander's blog</a> has some <em>really good</em> resources on Wordpress OOP.</li>
+</ul>
 </article></body></html>
